@@ -6,7 +6,7 @@
             [tawami.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/tawami/kotoba/seed.edn")
 (defn- claims [] (c/from-assets (te/assets seed-path)))
 
 (def mio-flow-classes #{:peak-shave :renewable-absorb :compute-routing :flexibility :intention :waste-heat})

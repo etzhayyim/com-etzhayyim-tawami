@@ -5,7 +5,7 @@
   (:require [tawami.methods.tawami-edn :as te]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/tawami/kotoba/seed.edn")
 
 (deftest loads-assets
   (let [as (te/assets seed-path)]

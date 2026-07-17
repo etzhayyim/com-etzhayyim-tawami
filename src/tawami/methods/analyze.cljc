@@ -209,7 +209,7 @@
 
 #?(:clj
    (defn -main [& args]
-     (let [seed (or (first args) "kotoba/seed.edn")
+     (let [seed (or (first args) "resources/tawami/kotoba/seed.edn")
            rows (te/parse-edn (slurp seed))
            as (vec (filter #(= (:type %) :asset) rows))
            a (analyze as)

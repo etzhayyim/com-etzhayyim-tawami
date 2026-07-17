@@ -43,8 +43,8 @@
   {:lex/id "flexOffer"}]
 
  :actor/seed
- {:seed/file "kotoba/seed.edn"
-  :seed/ontology "kotoba/ontology.tawami.edn"
+ {:seed/file "resources/tawami/kotoba/seed.edn"
+  :seed/ontology "resources/tawami/kotoba/ontology.tawami.edn"
   :seed/sourcing :representative
   :seed/classes [:battery :ev-fleet :cold-store :datacenter :heat-pump :industrial-process]}
 

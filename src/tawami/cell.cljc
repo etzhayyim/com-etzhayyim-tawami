@@ -20,7 +20,7 @@
      ([] (fire nil))
      ([log-path]
       (let [target (or log-path @log-default)
-            assets (edn/assets (str (io/file (actor-dir) "kotoba" "seed.edn")))
+            assets (edn/assets (str (io/file (actor-dir) "resources" "tawami" "kotoba" "seed.edn")))
             cycle (count (k/read-log target))
             r (autorun/beat {:assets assets
                              :tx-id (str "tawami-beat-" cycle) :as-of (str "cycle-" cycle)

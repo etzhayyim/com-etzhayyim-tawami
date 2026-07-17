@@ -7,7 +7,7 @@
             [clojure.string :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/tawami/kotoba/seed.edn")
 (defn- as [] (te/assets seed-path))
 (defn- by-id [id] (first (filter #(= id (:id %)) (as))))
 (defn- row [id] (first (filter #(= id (get % "id")) (get (a/analyze (as)) "assets"))))

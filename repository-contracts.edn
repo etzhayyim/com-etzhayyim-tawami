@@ -1,0 +1,12 @@
+{:repository/id etzhayyim/com-etzhayyim-tawami
+ :repository/category :actor
+ :canonical-format :edn
+ :emits {:contract :mio/flow-improvement-claim
+         :consumer etzhayyim/com-etzhayyim-mio}
+ :integrations
+ {etzhayyim/com-etzhayyim-mio
+  {:revision "2c1e5fdb98ea55117f69039724d030db2806817b"
+   :mode :data-contract}
+  etzhayyim/com-etzhayyim-okibi {:state :pending-independent-repository}
+  etzhayyim/com-etzhayyim-toi {:state :pending-independent-repository}
+  etzhayyim/com-etzhayyim-yudane {:state :pending-independent-repository}}}

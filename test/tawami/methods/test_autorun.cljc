@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; 撓 tawami — heartbeat (idempotent-by-content) tests.
-;; Run:  bb --classpath 20-actors 20-actors/tawami/methods/test_autorun.cljc
+;; Run:  bb --classpath src:test test/tawami/methods/test_autorun.cljc
 (ns tawami.methods.test-autorun
   (:require [tawami.methods.tawami-edn :as te]
             [tawami.methods.autorun :as ar]
@@ -8,8 +8,8 @@
             [clojure.java.io :as io]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/tawami/kotoba/seed.edn")
-(def ^:private tmp "20-actors/tawami/data/test-autorun.kotoba.edn")
+(def seed-path "kotoba/seed.edn")
+(def ^:private tmp "data/test-autorun.kotoba.edn")
 (defn- clean! [] (let [f (io/file tmp)] (when (.exists f) (.delete f))))
 (defn- assets [] (te/assets seed-path))
 

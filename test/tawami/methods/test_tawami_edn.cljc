@@ -1,11 +1,11 @@
 #!/usr/bin/env bb
 ;; 撓 tawami — seed loader tests.
-;; Run:  bb --classpath 20-actors 20-actors/tawami/methods/test_tawami_edn.cljc
+;; Run:  bb --classpath src:test test/tawami/methods/test_tawami_edn.cljc
 (ns tawami.methods.test-tawami-edn
   (:require [tawami.methods.tawami-edn :as te]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/tawami/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 
 (deftest loads-assets
   (let [as (te/assets seed-path)]

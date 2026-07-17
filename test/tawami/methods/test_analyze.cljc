@@ -1,13 +1,13 @@
 #!/usr/bin/env bb
 ;; 撓 tawami — analyze/datoms/coverage tests (incl. constitutional invariants).
-;; Run:  bb --classpath 20-actors 20-actors/tawami/methods/test_analyze.cljc
+;; Run:  bb --classpath src:test test/tawami/methods/test_analyze.cljc
 (ns tawami.methods.test-analyze
   (:require [tawami.methods.tawami-edn :as te]
             [tawami.methods.analyze :as a]
             [clojure.string :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/tawami/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 (defn- as [] (te/assets seed-path))
 (defn- by-id [id] (first (filter #(= id (:id %)) (as))))
 (defn- row [id] (first (filter #(= id (get % "id")) (get (a/analyze (as)) "assets"))))

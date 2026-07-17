@@ -1,12 +1,12 @@
 #!/usr/bin/env bb
 ;; 撓 tawami — claim-emitter tests (the 澪 mio seam shape).
-;; Run:  bb --classpath 20-actors 20-actors/tawami/methods/test_claim.cljc
+;; Run:  bb --classpath src:test test/tawami/methods/test_claim.cljc
 (ns tawami.methods.test-claim
   (:require [tawami.methods.tawami-edn :as te]
             [tawami.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/tawami/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 (defn- claims [] (c/from-assets (te/assets seed-path)))
 
 (def mio-flow-classes #{:peak-shave :renewable-absorb :compute-routing :flexibility :intention :waste-heat})

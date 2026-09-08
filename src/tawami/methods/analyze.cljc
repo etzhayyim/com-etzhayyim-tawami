@@ -18,7 +18,7 @@
         attribute is computed or emitted (hikari actuates under Council gate).
     G2  aggregate-first — no :tawami.person/* load profile exists.
     G3  no :trade / :signal — flexibility is observed, never traded."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [tawami.methods.tawami-edn :as te]))
 
 ;; ── pure analytics ───────────────────────────────────────────────────────────

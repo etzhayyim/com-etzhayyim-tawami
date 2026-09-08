@@ -2,7 +2,7 @@
 ;; 撓 tawami — claim-emitter tests (the 澪 mio seam shape).
 ;; Run:  bb --classpath src:test test/tawami/methods/test_claim.cljc
 (ns tawami.methods.test-claim
-  (:require [tawami.methods.tawami-edn :as te]
+  (:require [kotoba.lang.text] [tawami.methods.tawami-edn :as te]
             [tawami.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
@@ -18,7 +18,7 @@
     (is (contains? mio-flow-classes (:flow-class cl)) (str (:id cl) " has a valid mio flow-class"))
     (is (number? (:order-delta-kwh cl)))
     ;; the five §9 verification facts mio requires
-    (is (not (clojure.string/blank? (:baseline-method cl))) (str (:id cl) " baseline"))
+    (is (not (kotoba.lang.text/blank? (:baseline-method cl))) (str (:id cl) " baseline"))
     (is (and (>= (:additionality cl) 0.0) (<= (:additionality cl) 1.0)) (str (:id cl) " additionality"))
     (is (keyword? (:measurement-source cl)) (str (:id cl) " measurement"))
     (is (string? (:double-count-key cl)) (str (:id cl) " double-count-key"))

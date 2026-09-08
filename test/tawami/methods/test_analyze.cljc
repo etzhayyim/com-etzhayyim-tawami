@@ -4,7 +4,7 @@
 (ns tawami.methods.test-analyze
   (:require [tawami.methods.tawami-edn :as te]
             [tawami.methods.analyze :as a]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
 (def seed-path "resources/tawami/kotoba/seed.edn")

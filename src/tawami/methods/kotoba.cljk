@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 撓 tawami — flexibility-ledger kotoba Datom-log writer (content-addressed).
 (ns tawami.methods.kotoba
   "kotoba.cljc — 撓 tawami append-only FLEXIBILITY LEDGER writer (on ADR-2605262130

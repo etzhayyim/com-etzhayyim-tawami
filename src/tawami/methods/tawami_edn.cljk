@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 撓 tawami — seed loader + classifier (clj-native, pure stdlib).
 (ns tawami.methods.tawami-edn
   "撓 tawami — load + classify the flexibility-asset seed substrate.

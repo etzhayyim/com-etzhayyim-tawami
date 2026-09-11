@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 撓 tawami — claim-emitter tests (the 澪 mio seam shape).
-;; Run:  bb --classpath src:test test/tawami/methods/test_claim.cljk
+;; Run:  kbb --classpath src:test test/tawami/methods/test_claim.cljk
 (ns tawami.methods.test-claim
   (:require [kotoba.lang.text] [tawami.methods.tawami-edn :as te]
             [tawami.methods.claim :as c]

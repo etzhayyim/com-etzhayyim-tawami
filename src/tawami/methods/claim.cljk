@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 撓 tawami — claim emitter (the 澪 mio suite seam).
 (ns tawami.methods.claim
   "claim.cljc — 撓 tawami → 澪 mio flow-improvement CLAIM emitter (Energy Order

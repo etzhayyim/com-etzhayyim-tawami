@@ -14,6 +14,6 @@ SUITES=(
 fail=0
 for s in "${SUITES[@]}"; do
   echo "== $s =="
-  if bb --classpath src:test "$s"; then :; else echo "FAILED: $s"; fail=1; fi
+  if kbb --classpath src:test "$s"; then :; else echo "FAILED: $s"; fail=1; fi
 done
 exit $fail

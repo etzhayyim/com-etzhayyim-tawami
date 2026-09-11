@@ -33,8 +33,8 @@ flexibility is actually *used*, it becomes a 澪 mio flow-improvement claim (R1)
 
 ```bash
 ./20-actors/tawami/run_tests.sh                                   # 20 tests / 134 assertions
-bb --classpath 20-actors 20-actors/tawami/methods/analyze.cljc    # render the flexibility map
-bb --classpath 20-actors 20-actors/tawami/methods/autorun.cljc    # one heartbeat → append (idempotent-by-content)
+kbb --classpath 20-actors 20-actors/tawami/methods/analyze.cljc    # render the flexibility map
+kbb --classpath 20-actors 20-actors/tawami/methods/autorun.cljc    # one heartbeat → append (idempotent-by-content)
 ```
 
 OBSERVATION ONLY. A flexibility map, **never a dispatch order**.

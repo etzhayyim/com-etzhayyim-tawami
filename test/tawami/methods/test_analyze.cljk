@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 撓 tawami — analyze/datoms/coverage tests (incl. constitutional invariants).
-;; Run:  bb --classpath src:test test/tawami/methods/test_analyze.cljk
+;; Run:  kbb --classpath src:test test/tawami/methods/test_analyze.cljk
 (ns tawami.methods.test-analyze
   (:require [tawami.methods.tawami-edn :as te]
             [tawami.methods.analyze :as a]

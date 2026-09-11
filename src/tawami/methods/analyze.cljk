@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 撓 tawami — analyze → datoms → coverage (clj-native, pure stdlib).
 (ns tawami.methods.analyze
   "撓 tawami — the Proof-of-Flexibility analytical core (Energy Order Protocol).

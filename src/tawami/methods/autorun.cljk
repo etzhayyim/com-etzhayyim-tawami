@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 撓 tawami — autonomous heartbeat: analyze → append flexibility obs to the ledger.
 (ns tawami.methods.autorun
   "autorun.cljc — 撓 tawami deterministic, idempotent-by-content heartbeat

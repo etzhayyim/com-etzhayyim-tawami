@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; 撓 tawami — flexibility-ledger (content-addressed commit-DAG) tests.
-;; Run:  bb --classpath src:test test/tawami/methods/test_kotoba.cljc
+;; Run:  bb --classpath src:test test/tawami/methods/test_kotoba.cljk
 (ns tawami.methods.test-kotoba
   (:require [tawami.methods.kotoba :as k]
             [clojure.java.io :as io]

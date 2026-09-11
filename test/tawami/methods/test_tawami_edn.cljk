@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; 撓 tawami — seed loader tests.
-;; Run:  bb --classpath src:test test/tawami/methods/test_tawami_edn.cljc
+;; Run:  bb --classpath src:test test/tawami/methods/test_tawami_edn.cljk
 (ns tawami.methods.test-tawami-edn
   (:require [tawami.methods.tawami-edn :as te]
             [clojure.test :refer [deftest is run-tests]]))

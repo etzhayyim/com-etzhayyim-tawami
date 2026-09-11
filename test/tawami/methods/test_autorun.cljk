@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; 撓 tawami — heartbeat (idempotent-by-content) tests.
-;; Run:  bb --classpath src:test test/tawami/methods/test_autorun.cljc
+;; Run:  bb --classpath src:test test/tawami/methods/test_autorun.cljk
 (ns tawami.methods.test-autorun
   (:require [tawami.methods.tawami-edn :as te]
             [tawami.methods.autorun :as ar]

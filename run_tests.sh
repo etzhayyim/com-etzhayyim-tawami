@@ -4,11 +4,11 @@ set -uo pipefail
 cd "$(dirname "$0")"
 
 SUITES=(
-  "test/tawami/methods/test_tawami_edn.cljc"
-  "test/tawami/methods/test_analyze.cljc"
-  "test/tawami/methods/test_kotoba.cljc"
-  "test/tawami/methods/test_autorun.cljc"
-  "test/tawami/methods/test_claim.cljc"
+  "test/tawami/methods/test_tawami_edn.cljk"
+  "test/tawami/methods/test_analyze.cljk"
+  "test/tawami/methods/test_kotoba.cljk"
+  "test/tawami/methods/test_autorun.cljk"
+  "test/tawami/methods/test_claim.cljk"
 )
 
 fail=0

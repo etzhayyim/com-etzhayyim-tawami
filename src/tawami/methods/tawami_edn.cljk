@@ -3,7 +3,7 @@
 (ns tawami.methods.tawami-edn
   "撓 tawami — load + classify the flexibility-asset seed substrate.
   Sibling of the mio/busshi *_edn loaders. Energy Order Protocol."
-  (:require [clojure.edn :as edn]
+  (:require [kotoba.lang.edn :as edn]
             #?(:clj [clojure.java.io :as io])))
 
 (defn- tx-data-rows?
